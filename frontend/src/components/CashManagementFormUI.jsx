@@ -6,7 +6,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/cashManagementForm.css";
 
 const API_URL = "https://cashmanagement-app-ahhjctexgrbbgce2.japaneast-01.azurewebsites.net/api";
-
 const CashManagementFormUI = () => {
     const [difference, setDifference] = useState(0); 
     const [loading, setLoading] = useState(false);
