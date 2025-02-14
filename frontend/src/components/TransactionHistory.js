@@ -3,8 +3,9 @@ import axios from "axios";
 import PDFButton from "./PDFButton"; // ✅ PDFダウンロードボタンを追加
 import "bootstrap/dist/css/bootstrap.min.css"; // ✅ Bootstrap を適用
 
-// const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5000";
-const API_URL = "https://cashmanagement-app-ahhjctexgrbbgce2.japaneast-01.azurewebsites.net/api";
+const API_URL =
+  process.env.REACT_APP_API_URL ||
+  "https://cashmanagement-app-ahhjctexgrbbgce2.japaneast-01.azurewebsites.net/api";
 
 
 const TransactionHistory = ({ fetchTransactions, fetchCashState }) => {
