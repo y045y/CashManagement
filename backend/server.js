@@ -182,6 +182,11 @@ router.delete("/transactions/:id", async (req, res) => {
         res.status(500).json({ error: "データ削除に失敗しました" });
     }
 });
+// サーバー起動処理の手前あたり
+app.get("/", (req, res) => {
+    res.send("OK");
+});
+
 
 // サーバー起動処理
 const PORT = process.env.PORT || 5000;
